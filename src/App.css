@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+/* mobile sidebar */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: -220px;
+  height: 100vh;
+  width: 220px;
+  display: flex;
+  flex-direction: row;
+  z-index: 1050;
+  transition: left 0.3s ease-in-out;
+}
+
+.mobile-sidebar.open {
+  left: 0;
+}
+
+.sidebar-backdrop {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 767.98px) {
+  .responsive-width {
+    width: 100% !important;
+  }
+}
