@@ -15,6 +15,7 @@ import {
 } from "react-bootstrap-icons";
 import { Nav } from "react-bootstrap";
 // import "./Sidebar.css"; // custom styles
+import { Dropdown } from "react-bootstrap";
 
 const Sidebar = () => {
   const [showMobileSidebar, setShowMobileSidebar] = useState(false);
@@ -41,7 +42,7 @@ const Sidebar = () => {
       {/* Mobile Header */}
       <div className="d-md-none d-flex justify-content-between align-items-center px-3 py-2 border-bottom bg-white">
         <div className="d-flex align-items-center gap-3">
-          <List size={24} onClick={toggleSidebar} role="button" />
+          <List size={22} onClick={toggleSidebar} role="button" />
           <Search size={22} />
         </div>
         <div className="d-flex gap-3">
@@ -127,34 +128,34 @@ export default Sidebar;
 //           <House size={28} />
 //         </Nav.Link>
 //         <Nav.Link href="#settings" className="text-black my-2 p-0">
-//           <Gear size={24} />
+//           <Gear size={22} />
 //         </Nav.Link>
 //         <Nav.Link href="#about" className="text-black my-2 p-0">
-//           <InfoCircle size={24} />
+//           <InfoCircle size={22} />
 //         </Nav.Link>
 //         <Nav.Link href="#settings" className="text-black my-2 p-0">
-//           <Gear size={24} />
+//           <Gear size={22} />
 //         </Nav.Link>
 //         <Nav.Link href="#about" className="text-black my-2 p-0">
-//           <InfoCircle size={24} />
+//           <InfoCircle size={22} />
 //         </Nav.Link>
 //         <Nav.Link href="#settings" className="text-black my-2 p-0">
-//           <Gear size={24} />
+//           <Gear size={22} />
 //         </Nav.Link>
 //         <Nav.Link href="#about" className="text-black my-2 p-0">
-//           <InfoCircle size={24} />
+//           <InfoCircle size={22} />
 //         </Nav.Link>
 //         <Nav.Link href="#settings" className="text-black my-2 p-0">
-//           <Gear size={24} />
+//           <Gear size={22} />
 //         </Nav.Link>
 //         <Nav.Link href="#about" className="text-black my-2 p-0">
-//           <InfoCircle size={24} />
+//           <InfoCircle size={22} />
 //         </Nav.Link>
 //         <Nav.Link href="#settings" className="text-black my-2 p-0">
-//           <Gear size={24} />
+//           <Gear size={22} />
 //         </Nav.Link>
 //         <Nav.Link href="#about" className="text-black my-2 p-0">
-//           <InfoCircle size={24} />
+//           <InfoCircle size={22} />
 //         </Nav.Link>
 //       </Nav>
 //     </div>

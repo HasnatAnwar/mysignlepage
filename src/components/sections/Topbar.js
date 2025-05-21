@@ -21,7 +21,6 @@ export default function TabNavigation() {
         style={{
           whiteSpace: "nowrap",
           maxWidth: "100%",
-          paddingBottom: "0",
         }}
       >
         {tabs.map((tab) => (
@@ -30,7 +29,7 @@ export default function TabNavigation() {
             onClick={() => setActiveTab(tab.key)}
             style={{
               color: activeTab === tab.key ? "blue" : "black",
-              paddingBottom: "4px",
+              // paddingBottom: "4px",
               borderBottom:
                 activeTab === tab.key
                   ? "2px solid blue"
@@ -40,6 +39,9 @@ export default function TabNavigation() {
               fontWeight: activeTab === tab.key ? "500" : "400",
               transition: "all 0.2s ease",
               display: "inline-block",
+              fontSize: "16px",
+              paddingBottom: "10px",
+              marginBottom:'0px'
             }}
           >
             {tab.label}
@@ -52,11 +54,12 @@ export default function TabNavigation() {
         className="d-none d-md-block"
         style={{
           border: "1px solid lightgray",
-          borderRadius: "10px",
+          borderRadius: "5px",
           textAlign: "center",
           padding: "5px 15px",
           cursor: "pointer",
           whiteSpace: "nowrap",
+          marginBottom: "10px",
         }}
       >
         Je advertentie afmaken

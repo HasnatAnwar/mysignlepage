@@ -64,7 +64,9 @@ const PastBooking = () => {
                   }}
                 >
                   <p style={{ fontSize: "48px", margin: 0 }}>0</p>
-                  <p style={{ margin: 0, fontWeight: 500 }}>#book Required</p>
+                  <p style={{ margin: 0, fontWeight: 400, fontSize: "14px" }}>
+                    #book Required
+                  </p>
                 </div>
               ))}
             </div>
@@ -77,7 +79,12 @@ const PastBooking = () => {
             </div>
           </div>
           <div
-            style={{ flex: 1,flexDirection:'column', fontSize: "14px", paddingTop: "20px" }}
+            style={{
+              flex: 1,
+              flexDirection: "column",
+              fontSize: "14px",
+              paddingTop: "20px",
+            }}
             className="d-flex d-md-none"
           >
             <p style={{ fontWeight: 600 }}>Compared to other buildings</p>
@@ -88,7 +95,7 @@ const PastBooking = () => {
               % booking accepted under 85% is considered as bad
             </p>
           </div>
-          <p style={{ textAlign: "start" }}>Inform Eb Tips</p>
+          <p style={{ textAlign: "start", fontSize: "26px" }}>Inform Eb Tips</p>
           <div className="row g-2">
             {[one, two, three, four, one].map((src, index) => (
               <div key={index} className="col-6 col-md-3 d-flex">
@@ -113,7 +120,7 @@ const PastBooking = () => {
                       }}
                     />
                   </div>
-                  <p className="text-center mt-2">
+                  <p className="text-center mt-2" style={{ fontSize: "14px" }}>
                     Hoe Je Wortt betaald voor Verhuren
                   </p>
                 </div>
