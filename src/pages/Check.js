@@ -7,12 +7,12 @@ import { Dropdownbar } from "../components/sections/Dropdownbar";
 import PastBooking from "../components/sections/PastBooking";
 function CheckPage() {
   return (
-    <Container className="mt-5">
+    <Container className="mt-2">
       <div
         className="d-flex d-md-none"
-        style={{ justifyContent: "space-between" }}
+        style={{ justifyContent: "space-between ", padding: "5px 0px" }}
       >
-        <h5>Dashboard</h5>
+        <h5 style={{}}>Dashboard</h5>
         <ThreeDotsVertical size={24} />
       </div>
       <TabNavigation />
@@ -28,7 +28,10 @@ function CheckPage() {
         }}
         className="d-none d-md-flex"
       >
-        <h5 className="d-none d-md-block">
+        <h5
+          className="d-none d-md-block"
+          style={{ fontSize: "20px", color: "#666666" }}
+        >
           Embedded Host Dashboard _ OverView
         </h5>
         <div
